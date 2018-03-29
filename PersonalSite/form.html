@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Create User</title>
+</head>
+<body>
+    <h1>
+        Create User
+    </h1>
+    <hr>
+    <form action="create_user.html" method="GET" enctype="application/x-www-form-urlencoded">
+        <fieldset>
+            <legend>User Form</legend>
+            <div>                
+                <label>Username:</label>
+                <input type="text" name="username" placeholder="Enter Username" size="30" maxlength="12" required pattern="[a-zA-Z]+" title="Enter only letters">                    
+                <label>Password:</label>
+                <input type="password" size="30" maxlength="8" placeholder="Enter Password" required pattern="^\d{1,45}$" title="Enter only Numaric value">
+                <div>
+                    <label>
+                        Select your favourite superhero:
+                    </label>
+                    <input id="ironman" type="radio" name="superheros" checked value="iron man">
+                    <label for="ironman">Iron Man</label>
+                    <input id="batman" type="radio" name="superheros" value="batman">
+                    <label for="batman">Batman</label>
+                    <input id="wonderwoman" type="radio" name="superheros" value="wonder woman">
+                    <label for="wonderwoman">Wonder Woman</label>
+                    <input id="flash" type="radio" name="superheros" value="flash">
+                    <label for="flash">Flash</label>
+                    <input id="thor" type="radio" name="superheros" value="thor">
+                    <label for="thor">Thor</label>
+                    <input id="hulk" type="radio" name="superheros" value="hulk">
+                    <label for="hulk">Hulk</label>
+                    <input id="superman" type="radio" name="superheros" value="superman">
+                    <label for="superman">Superman</label>
+                </div>
+                <div>
+                    <label>
+                            Select your favourite video game:
+                    </label>
+                    <input id="destiny2" type="checkbox" name="videogames" checked value="destiny2">
+                    <label for="destiny2">Destiny 2</label>
+                    <input id="fifa" type="checkbox" name="videogames" value="fifa">
+                    <label for="fifa">Fifa</label>
+                    <input id="nhl" type="checkbox" name="videogames" value="nhl">
+                    <label for="nhl">NHL</label>
+                    <input id="resevil" type="checkbox" name="videogames" value="resevil">
+                    <label for="resevil">Residence Evil</label>
+                    <input id="uncharted" type="checkbox" name="videogames" checked value="uncharted">
+                    <label for="uncharted">Uncharted</label>
+                </div>
+                <div>
+                    <input type="hidden" name="userid" value="2300">
+                    <label>Date of Birth:</label>
+                    <input type="date" name="DOB" value="2018/01/01">
+                    <label>Email:</label>
+                    <input type="email" name="email" placeholder="Email" required>
+                    <label>URL</label>
+                    <input type="url" name="url" value="https://www.">
+                </div>
+                    <input type="image" src="register_button.png">
+            </div>
+        </fieldset>
+    </form>
+    <form action="https://www.google.ca/search" method="GET" enctype="application/x-www-form-urlencoded">
+        <lable>Search</lable>
+        <input type="search" name="q" value="search">
+        <input type="submit" name="submit" value="submit">
+    </form>
+</body>
+</html>
