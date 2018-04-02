@@ -7,34 +7,76 @@
     <meta name="Discription" content="Learning HTML site using browser video and audio player">
     <meta name="keywords" content="html, css, js, comit, skipthedishes, video, audio">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 </head>
 <body>
-    <h1>News</h1>
+    <h1>Harpreet S Dhillon</h1>
     <hr>
+    <form action="http://www.google.com/search" target="_blank">
+        <label for="serach">Keyword(s):</label>
+        <input id="search" type="serach" name=q>
+        <button>Search</button>
+    </form>
     <header>
         <h1>HTML is a first step to make a Website</h1>
     </header>
     <nav>
-    <ul>
-        <li><a href="personalsite.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="contact.html">Contact</a></li>
-    </ul>
+        <ul>
+            <li><a href="personalsite.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="form.html">Sign up</a></li>
+        </ul>
     </nav>
     <aside>
-        <p>Aside Content</p>
+        <p>I should do better Job writing HTML page</p>
     </aside>
     <section>
-        <h1>Main Title of First Section</h1>
+        <h1>Education</h1>
+        <table width ="90%" cellpadding="8" border="1" bgcolor="lightgray">
+                <thead>
+                    <tr>
+                        <th>Year</th>
+                        <th>Country</th>
+                        <th>Stream</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>2018</td>
+                        <td>Canada</td>
+                        <td>Web Development</td>
+                        <td>In Process</td>
+                    </tr>
+                    <tr>
+                        <td>2006-2009</td>
+                        <td>India</td>
+                        <td>Computer Engineering</td>
+                        <td>Finished</td>
+                    </tr>
+                    <tr>
+                        <td>2003-2006</td>
+                        <td>India</td>
+                        <td>Computer Science</td>
+                        <td>Finished</td>
+                    </tr>
+                </tbody> 
+                <tfoot>
+                    <tr>
+                        <td colspan="4">My Education</td>
+                    </tr>
+                </tfoot>      
+            </table>   
         <p>Content for First Section</p>
     </section>
     <section>
-        <h1>Create User</h1>
+        <h1>Winnipeg News</h1>
         <hr>
-        <iframe src="form.html" width="850px" height="400px" frameborder="0"></iframe>
+        <iframe src="http://winnipegsun.com/" width="850px" height="400px" frameborder="0"></iframe>
     </section>
     <footer>
-        <p>Winnipeg News</p>
+        <div>@2018 HTMLPage</div>
     </footer>
 </body>
 </html>
