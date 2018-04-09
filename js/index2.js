@@ -1,0 +1,10 @@
+var firstName;
+var lastName;
+var age;
+var dateOfBirth;
+var address;
+firstName = 'Harpreet';
+lastName = 'Dhillon';
+age = 31;
+dateOfBirth = '01/01/1987';
+address = 'Winnipeg';
