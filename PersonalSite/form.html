@@ -1,66 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <title>Sign Up</title>
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" type="text/css" href="style.css">    
-</head>
-<body>
-    <header>
-        <nav>
-            <ul id = 'topnav'>
-                <li><a id = 'active' href="index.html">Home</a></li>
-                <li><a href="gallery.html">Gallery</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a id = 'right' href="form.html">Sign up</a></li>
-                <li>
-                    <form action="http://www.google.com/search" target="_blank">
-                    <label for="serach">Keyword(s):</label>
-                    <input id="search" type="serach" name=q>
-                    <button>Search</button>
-                    </form>
-                </li>
-            </ul>
-        </nav>
-    </header>
-    <h1>
-        Sign Up
-    </h1>
-    <hr>
-    <form action="#" method="GET" enctype="application/x-www-form-urlencoded">
-        <fieldset>
-            <legend>User Form</legend>
-            <div>                
-                <label>Name:</label>
-                <input type="text" name="name" placeholder="Enter Your Name" size="30" maxlength="12" required pattern="[a-zA-Z]+" title="Enter only letters">                    
-                <label>Username:</label>
-                <input type="text" name="lname" placeholder="Enter your Last Name" size="30" maxlength="12" required pattern="[^' ']+[a-zA-Z]+" title="Only letter, no space allowed">
-                <label>Password:</label>
-                <input type="password" size="30" maxlength="8" placeholder="Enter Password" required pattern="^\d{1,45}$" title="Enter only Numaric value">
-                <label>Select A Country</label>
-                <select id="country" name="countries">
-                    <option value="">Please select a Country</option>
-                    <option value="arg">Argentina</option>
-                    <option value="bra">Brasil</option>
-                    <option value="chl">Chile</option>
-                    <option value="can">Canada</option>
-                    <option value="in">India</option>
-                </select>
-                <div>
-                    <input type="hidden" name="userid" value="2300">
-                    <label>Date of Birth:</label>
-                    <input type="date" name="DOB" value="2018/01/01">
-                    <label>Email:</label>
-                    <input type="email" name="email" placeholder="Email" required><br>
-                    <button>Submit</button>
+    <head>
+        <title>Sign Up</title>
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" type="text/css" href="style.css">    
+        <link href='http://fonts.googleapis.com/css?family=Bitter' rel='stylesheet' type='text/css'>
+        
+    </head>
+    <body>
+        <header>
+            <nav>
+                <ul id = 'topnav'>
+                    <li><a id = 'active' href="index.html">Home</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="form.html">Sign up</a></li>
+                    <li id="right">
+                        <form action="http://www.google.com/search" target="_blank">
+                            <label for="serach">Keyword(s):</label>
+                            <input id="search" type="serach" name=q>
+                            <button>Search</button>
+                        </form>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <h1>
+            Sign Up
+        </h1>
+        <hr>
+        <div class="form-style-10">
+            <form action="#" method="GET" enctype="application/x-www-form-urlencoded">
+                <div class="section"><span>1</span>First Name &amp; Address</div>
+                <div class="inner-wrap">
+                    <label>Your Full Name <input type="text" name="field1" required pattern="[a-zA-Z]+" title="Enter only letters"></label>
+                    <label>Address <textarea name="field2"></textarea></label>
                 </div>
-            </div>
-        </fieldset>
-    </form>
-    <!-- <form action="https://www.google.ca/search" method="GET" enctype="application/x-www-form-urlencoded">
-        <lable>Search</lable>
-        <input type="search" name="q" value="search">
-        <input type="submit" name="submit" value="submit">
-    </form> -->
-</body>
+                <div class="section"><span>2</span>Email &amp; Phone</div>
+                <div class="inner-wrap">
+                    <label>Email Address <input type="email" name="field3" required></label>
+                    <label>Phone Number <input type="text" name="field4"></label>
+                </div>       
+                <div class="section"><span>3</span>Passwords</div>
+                <div class="inner-wrap">
+                    <label>Password <input type="password" name="field5" required pattern="^\d{1,45}$" title="Enter only Numaric value"></label>
+                    <label>Confirm Password <input type="password" name="field6" required pattern="^\d{1,45}$" title="Enter only Numaric value"></label>
+                </div>
+                <div class="button-section">
+                    <input type="submit" name="Sign Up">
+                    <span class="privacy-policy">
+                        <input type="checkbox" name="field7">You agree to our <a href="#">Terms and Policy</a>. 
+                    </span>
+                </div>
+            </form>
+        </div>    
+        <!-- <form action="https://www.google.ca/search" method="GET" enctype="application/x-www-form-urlencoded">
+            <lable>Search</lable>
+            <input type="search" name="q" value="search">
+            <input type="submit" name="submit" value="submit">
+        </form> -->
+    </body>
 </html>
