@@ -8,26 +8,26 @@
     <meta name="keywords" content="html, css, js, comit, skipthedishes, video, audio">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-    <h1>Harpreet S Dhillon</h1>
-    <hr>
-    <form action="http://www.google.com/search" target="_blank">
-        <label for="serach">Keyword(s):</label>
-        <input id="search" type="serach" name=q>
-        <button>Search</button>
-    </form>
     <header>
-        <h1>HTML is a first step to make a Website</h1>
+        <nav>
+            <ul id = 'topnav'>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a id = 'right' href="form.html">Sign up</a></li>
+                <li>
+                    <form action="http://www.google.com/search" target="_blank">
+                    <label for="serach">Keyword(s):</label>
+                    <input id="search" type="serach" name=q>
+                    <button>Search</button>
+                    </form>
+                </li>
+            </ul>
+        </nav>
     </header>
-    <nav>
-        <ul>
-            <li><a href="personalsite.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li><a href="form.html">Sign up</a></li>
-        </ul>
-    </nav>
     <aside>
         <p>I should do better Job writing HTML page</p>
     </aside>
@@ -73,7 +73,7 @@
     <section>
         <h1>Winnipeg News</h1>
         <hr>
-        <iframe src="http://winnipegsun.com/" width="850px" height="400px" frameborder="0"></iframe>
+        <iframe src="http://winnipegsun.com/" frameborder="0"></iframe>
     </section>
     <footer>
         <div>@2018 HTMLPage</div>

@@ -1,0 +1,14 @@
+let firstNumber;
+let secondNumber;
+firstNumber = 5;
+secondNumber = 6;
+let add = firstNumber + secondNumber;
+let subtract = firstNumber - secondNumber;
+let multiply = firstNumber * secondNumber;
+let division = firstNumber / secondNumber;
+let remainder = firstNumber % secondNumber;
+console.log(`I Add ${firstNumber} + ${secondNumber} and the result is ${add}.`);
+console.log(`I Subtract ${firstNumber} - ${secondNumber} and the result is ${subtract}.`);
+console.log(`I Multiply ${firstNumber} * ${secondNumber} and the result is ${multiply}.`);
+console.log(`I Divide ${firstNumber} / ${secondNumber} and the result is ${division}.`);
+console.log(`I Remainder ${firstNumber} % ${secondNumber} and the result is ${remainder}.`);
