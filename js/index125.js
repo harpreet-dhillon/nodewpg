@@ -1,0 +1,12 @@
+const iceCreamFlavors = [];
+iceCreamFlavors.push('Almond Chocolate Coconut');
+iceCreamFlavors.push('Almond Divinity');
+iceCreamFlavors.push('Banana');
+iceCreamFlavors.push('Banana Chocolate Chip');
+iceCreamFlavors.push('Banana Cream Pie');
+iceCreamFlavors.push('Banana Nut Bread');
+iceCreamFlavors.push('Banana Peanut Butter Ripple');
+iceCreamFlavors.push('Birthday Cake');
+iceCreamFlavors.push('Black Cherry');
+iceCreamFlavors.push('Black Raspberry');
+console.log(iceCreamFlavors);
