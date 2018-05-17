@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let number = 0;
+        let count = 0;
+        alert('This program will adds all the numbers you input');
+        while(confirm('Do you want to continue?')){
+            number = number + (+prompt('Enter first number'));
+            count++;
+            // alert(`The result so far is ${number}`);
+        }
+        let average = number / count;
+        alert(`The final result is: ${number}, The user input ${count} numbers, The average is: ${average}`);        
+    </script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>It's all JavaScript Baby!!</title>
+    </head>
+    <body>
+        <script>
+            window.onload = function(){
+                const names = ['THE FLASH',
+                'THE HULK',
+                'CAPTAIN AMERICA',
+                'IRON MAN',
+                'WOLVERINE',
+                'SUPERMAN',
+                'BATMAN',
+                'SPIDER-MAN',
+                'THOR',
+                'WONDER-WOMAN'
+                ]
+                const ul = document.createElement('ul');
+                names.forEach(function(name){
+                    let li = document.createElement('li');
+                    li.textContent = name;
+                    ul.appendChild(li);                                    
+                });
+                document.body.appendChild(ul);                
+            }
+        </script>
+    </body>
+</html>

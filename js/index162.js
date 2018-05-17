@@ -22,7 +22,7 @@ const user = {
     profile_text_color: "333333",
     lang: "en",
     followers_count: 70,
-    protected: false,
+    protected: false,   
     notifications: null,
     profile_background_image_url_https: "https://si0.twimg.com/images/themes/theme1/bg.png",
     profile_background_color: "C0DEED",
