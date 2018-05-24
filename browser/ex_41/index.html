@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Document</title>
+        <style>
+            .striked{
+                text-decoration: line-through;
+            }
+            li{
+                cursor: pointer;
+            }
+        </style>
+    </head>
+    <body>
+        <script>
+            window.onload = function(){
+                const ul = document.createElement('ul');
+                const weeklyChores = ['Change Winter Tire',
+                'Change Brake Rotors',
+                'Cleaning Yard',
+                'More Clean',
+                'Wash Car',
+                'Cook Food',
+                'Clean Bike',
+                'Buy Groceries',
+                'Oil Bike',
+                'Plant'];
+                weeklyChores.forEach(function(chore){
+                    const li = document.createElement('li');
+                    li.innerText = chore;
+                    ul.appendChild(li);
+                    document.body.appendChild(ul);
+                    li.addEventListener('click', function(){
+                        li.classList.toggle('striked');
+                    });
+                });
+            }
+        </script>
+    </body>
+</html>

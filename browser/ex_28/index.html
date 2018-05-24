@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>It's all JavaScript Baby!!</title>
+    </head>
+    <body>
+        <script>
+            window.onload = function(){
+                const ol = document.createElement('ol');
+                document.body.appendChild(ol);
+                while(confirm('Do you want to continue?')){
+                    const name = prompt('Enter a name');
+                    let li = document.createElement('li');
+                    li.textContent = name;
+                    ol.appendChild(li);
+                }
+                let li = document.querySelectorAll('li');
+                let count = 0;
+                li.forEach(function(list){
+                    if(count % 2 == 0){
+                        list.style.color = 'red';
+                    }
+                    else{
+                        list.style.color = 'blue';
+                    }
+                    count++;
+                })
+            }
+        </script>
+    </body>
+</html>

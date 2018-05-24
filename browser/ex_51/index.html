@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>JSON</title>
+    </head>
+    <body>
+        <div id="jsonresponse"></div>
+        <script>
+            window.onload = function(){
+                const response = `{
+                    "title": "A New Hope", 
+                    "episode_id": 4, 
+                    "species": [
+                        "https://swapi.co/api/species/5/", 
+                        "https://swapi.co/api/species/3/", 
+                        "https://swapi.co/api/species/2/", 
+                        "https://swapi.co/api/species/1/", 
+                        "https://swapi.co/api/species/4/"
+                    ]
+                }`;
+                const newResponse = JSON.parse(response);
+                const div = document.querySelector('#jsonresponse');
+                const title = document.createElement('h1');
+                title.innerText = `Title: ${newResponse.title} \n ResponseId:${newResponse.episode_id}`;
+                div.appendChild(title);
+
+                const species = newResponse.species;
+                let count = 1;
+                species.forEach(function(specie){
+                    const a = document.createElement('a');
+                    a.setAttribute('href', specie);
+                    a.innerHTML = `Episode ${count}\n`;
+                    count++;
+                    div.appendChild(a);
+                });
+            }
+        </script>
+    </body>
+</html>

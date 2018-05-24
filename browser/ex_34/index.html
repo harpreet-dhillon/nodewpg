@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Events</title>
+    </head>
+    <body>
+        <button id="firstButton">Click Me!!</button>
+        <button id="secondButton">Remove event listener</button>
+        <a href="https://google.com">Link with JavaScript handler</a>
+        <script>
+            window.onload = function(){
+                const button = document.querySelector('#firstButton');
+                const button2 = document.querySelector('#secondButton');
+                const greeting = function(){
+                alert('You clicked an event listened element');
+                };
+                button.addEventListener('click', greeting);
+                const removelistener = function(){
+                    button.removeEventListener('click', greeting);
+                }
+                button2.addEventListener('click', removelistener);
+            }
+        </script>
+    </body>
+</html>
+<!-- Add the secondButton id element as shown in the html example
+Select the secondButton id element using the getElementById method
+Create a greeting function that will show the alert message that we're using as firstButton event listener
+Use the greeting function as addEventListener callback
+Add a new event handler to the secondButton element using onclick
+Clicking the second button must remove the click listener from the first one -->

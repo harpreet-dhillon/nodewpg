@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Form elements event</title>
+    </head>
+    <body>
+        <form action="save_user.html" method="post" enctype="application/x-www-form-urlencoded" name="login">
+            <input type="text" id="username" name="username" />
+            <input type="password" id="pass" name="pass" />
+            <input type="submit" name="submit" value="Send" />
+        </form>
+        <script>
+            window.onload = function(){
+                // Select the form element using any of the JavaScript selectors
+                const form = document.querySelector('form');
+                const elements = [
+                    form.elements[0],
+                    form.elements[1]
+                ];
+                elements.forEach(function(element){
+                    // Add the element a box shadow when the user sets focus on the inputs
+                    element.onfocus = function(){
+                        element.style.border = '2px solid lightblue';
+                    }
+                    // Remove the box shadow when the user removes input focus
+                    element.onblur = function(){
+                        element.style.border = '';
+                    }
+                });
+                form.addEventListener('submit', function(event){
+                    // Add a form submit handler and prevent the default form behaivour
+                    event.preventDefault();
+                    // Show an alert message with the username and password values
+                    alert(`Username: ${elements[0].value}, Password: ${elements[1].value}`);
+                });
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Events</title>
+    </head>
+    <body>
+        <button id="firstButton">Click Me!!</button>
+        <button id="secondButton">Remove event listener</button>
+        <a href="https://google.com">Link with JavaScript handler</a>
+        <script>
+            window.onload = function(){
+                const button = document.querySelector('#firstButton');
+                const myfunction = function(){
+                   alert('You clicked an event listened element');
+                };
+                button.addEventListener('click', myfunction);
+            }
+        </script>
+    </body>
+</html>
