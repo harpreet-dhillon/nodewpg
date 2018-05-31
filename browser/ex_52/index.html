@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+      window.onload = function(){
+        const apiURL = 'https://swapi.co/api/films/';
+
+        const body = document.body;
+
+        function showFilm(films){
+          films.forEach(function(film){
+            const div=document.createElement('div');
+            body.appendChild(div);
+
+            const h1=document.createElement('h1');
+            h1.innerHTML=film.title;
+            div.appendChild(h1);
+
+            const episodeID=document.createElement('p');
+            episodeID.innerHTML='Episode ID:'+film.episode_id;
+            div.appendChild(episodeID);
+
+            const releaseDate=document.createElement('p');
+            releaseDate.innerHTML='Release Date:'+film.release_date;
+            div.appendChild(releaseDate);
+          })
+        };
+        fetch(apiURL)
+        .then(function(response){
+          if(response.status >= 200 && response.status <= 400){
+            console.log("successfully Connnceted");
+          }
+          else{
+            console.log('It has been successfully connected, but something went wrong!!');
+          }
+          return response.json();
+        })
+        .then(function(data){
+          const results = data.results;
+          showFilm(results);
+        });
+      }
+    </script>
+</body>
+</html>

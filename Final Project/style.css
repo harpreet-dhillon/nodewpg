@@ -1,0 +1,125 @@
+body {
+    background-color:beige;
+}
+.sign,.register {
+    display: inline;
+    margin-left: 30%;
+    position: relative;
+    background-color:#eee;
+    font-size: 35px;
+    text-align: center;
+    line-height: 100px;
+    text-shadow: 0 2px 1px #777;
+}
+.sign:hover {
+    border-radius: 10px;
+    background-color: #ddd;
+}
+.register:hover {
+    border-radius: 10px;
+    background-color: #ddd;
+}
+form {
+    background-color: rgba(245, 245, 220, 0.931);
+    border: 3px solid #ddd;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    width: 540px;
+    margin: auto;
+    padding: 20px 40px;
+}
+h1 {
+    color: darkred;
+    text-shadow: rgb(255, 0, 0);
+    display: inline;
+    margin-right: 50%;
+    padding: 0;
+}
+h2 {
+    text-align: center;
+    margin: none;
+    margin-bottom: 0;
+}
+fieldset {
+    border: none;
+    padding: none;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: none;
+    margin-right: none;
+}
+label {
+    display: inline-block;
+    width: 80px;
+    padding-right: 20px;
+}
+input[type="text"] {
+    display: inline-block;
+    width: 100%;
+     padding: 0.5em;
+     font-size: 16px;
+     border: 1px solid rgb(221, 221, 221);
+     color: #777;
+ }
+ input[type="password"] {
+    display: inline-block;
+    width: 100%;
+    padding: 0.5em;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    margin-bottom: 5%;
+ }
+ textarea {
+    display: inline-block;
+    width: 417px;
+    padding: 0.5em;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    vertical-align: middle;
+ }
+input[type="submit"] {
+    display: block;
+    padding: 10px;
+    color: white;
+    background-color: #e93427;
+    font-size: 18px;
+    text-align: center;
+    width: 100%;
+    border: 1px solid #f12d2d;
+    margin-bottom: 10%;
+}
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: lightcyan;
+    padding: 10px 20px 10px 20px;
+    margin: 0;
+    box-shadow: 0 2px 1px rgb(119, 119, 119);
+}
+nav > span {
+    display: inline;
+}
+nav a {
+    color: darkred;
+    text-decoration: none;
+    font-size: 18px;
+    display: inline-block;
+    margin-right: 10px;
+}
+nav > div {
+    display: inline-block;
+}
+nav > div [class="links"]  {
+    width: 90%;
+    text-align: right;
+}
+span {
+    margin: 50px;
+    font-size: 20px;
+    padding: 10px 20px 10px 20px;
+    white-space: normal;
+    display: block;
+    color: black;
+}
